@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <div>
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime">
+    </div>
+    <div>
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime">
+    </div>
+    <!-- Nova polja html5  (date, time, datetime, color, number, phone, email)-->
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div>
+        <label for="broj">Broj:</label>
+        <input type="number" max="10" min="5" step="2" id="broj" name="broj">
+    </div>
+
+    <div>
+        <label for="broj">Broj:</label>
+        <input type="color" id="broj" name="broj">
+    </div>
+    <!-- kraj Nova polja html5 -->
+    <div>
+        <label>Pol</label>
+        <label for="musko">Musko</label>
+        <input type="radio" id="musko" name="pol" value="m" >
+
+        <label for="zensko">Zensko</label>
+        <input type="radio" id="zensko" name="pol" value="z" checked>
+    </div>
+
+    <div>
+        <label>Kako se krecete po gradu? </label>
+        <label for="bicikl">Bicikl</label>
+        <input type="checkbox" id="bicikl" name="prevozno_sredstvo" value="1" >
+
+        <label for="kola">Kola</label>
+        <input type="checkbox" id="kola" name="prevozno_sredstvo" value="2" checked>
+
+        <label for="peske">Peske</label>
+        <input type="checkbox" id="peske" name="prevozno_sredstvo" value="3">
+    </div>
+
+    <div>
+        <label for="grad">Grad</label>
+        <!-- moze da se doda atribut "multiple" -->
+        <select name="grad" id="grad">
+            <option value="bg">Beograd</option>
+            <option value="ns">Novi Sad</option>
+            <option value="ni" selected>Nis</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="komentar">Komentar</label>
+        <textarea name="komentar" id="komentar"></textarea>
+    </div>
+
+    <div>
+        <!--Novi nacin pisanja-->
+        <button type="submit">Posalji</button>
+        <button type="reset">Reset</button>
+        <button type="button">Obican button</button>
+
+        <!--Stari nacin pisanja-->
+        <!--<input type="button" value="Obican button">-->
+        <!--<input type="submit" value="Posalji">-->
+        <!--<input type="reset" value="Obrisi">-->
+    </div>
+
+</form>
+
+
+
+<script style="js/main.js"></script>
+</body>
+</html>
