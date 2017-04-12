@@ -1,0 +1,108 @@
+$primarna-boja: lime;
+
+body {
+  background-color: $primarna-boja;
+}
+
+//komentar neki
+$boja: #000000;
+
+$padding-ulova: 10px;
+
+h1 {
+  color: $primarna-boja;
+}
+
+btn {
+  color: $primarna-boja;
+
+}
+
+nav {
+  margin: 0;
+
+  ul {
+    margin: 0;
+    padding: $padding-ulova;
+
+    li {
+      list-style-type: none;
+
+      a {
+        display:block;
+        background-color: $boja;
+        &:hover {
+          background-color: lighten($boja, 30%);
+        }
+      }
+
+
+
+    }
+
+
+  }
+}
+
+.hero {
+  h1 {
+    color: red;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  ul {
+    padding: $padding-ulova * 2;
+
+  }
+}
+
+@mixin osnova-za-dugmice($w:60px) {
+  color: white;
+  width: $w;
+  line-height: 20px;
+  min-height: 40px;
+}
+
+.button {
+  @include osnova-za-dugmice(100px);
+  background-color: gray;
+
+}
+
+@mixin border-radius($border) {
+  -webkit-border-radius: $border;
+  -moz-border-radius: $border;
+  -o-border-radius: $border;
+  -ms-border-radius: $border;
+  border-radius: $border;
+
+}
+
+.call-to-action {
+  @include osnova-za-dugmice();
+  background-color: red;
+  @include border-radius(10px);
+
+
+}
+
+.dugme {
+  color: red;
+  border: 1px solid black;
+  line-height: 20px;
+}
+
+
+.veliko-dugme {
+  @extend .dugme;
+  width: 200px;
+
+}
+
