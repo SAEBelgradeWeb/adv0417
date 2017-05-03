@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input:focus {
+            border: 2px solid red;
+            outline: none;
+        }
+
+        #div {
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 0;
+
+        }
+    </style>
+
+</head>
+<body onload="init()">
+
+
+<div id="div" onmouseenter="promeniPozadinu()" onmouseout="promeniPozadinu()" style="left: 0; top: 0">
+
+</div>
+<h2 id="naslov2">Naslov 2</h2>
+<h1 id="naslov" onclick="alert('cao')"></h1>
+Ime:
+<input type="text" id="ime">
+Prezime
+<input type="text" id="prezime">
+<button id="btn" onclick="imeIPrezime()">Klikni me</button>
+
+<script src="/cas8/js/main.js"></script>
+</body>
+</html>
