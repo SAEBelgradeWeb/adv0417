@@ -1,0 +1,68 @@
+@keyframes disco {
+    0% {
+        background-color: greenyellow;
+        width: 100px;
+    }
+
+    30% {
+        background-color: blueviolet;
+        width: 300px;
+    }
+
+    70% {
+        background-color: firebrick;
+        width: 50px;
+    }
+
+    100% {
+        background-color: hotpink;
+        width: 200px;
+    }
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    clear: both;
+    background-color: #4d4d4d;
+
+
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    clear: both;
+    background-color: #4d4d4d;
+
+
+}
+
+.animacija {
+    animation-name: disco;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.08,.54,.77,.39);
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    transition: 0.4s all;
+    opacity: 0;
+    float: left;
+
+}
+
+.box:hover {
+    /*width: 200px;*/
+    /*height: 200px;*/
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: 0.4s all;
+    border-radius: 50%;
+    background-color: darkblue;
+}
