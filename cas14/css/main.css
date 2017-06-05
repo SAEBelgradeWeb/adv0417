@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s color;
+    /*border-bottom: 2px solid transparent;*/
+}
+
+nav ul li a:hover {
+    color: darkred;
+    transition: 0.8s all;
+    /*border-bottom: 2px solid darkred;*/
+}
+
+nav ul li a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    transform: scalex(0);
+    margin-top: 10px;
+    background-color: darkred;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover:after {
+    transition: 0.4s all;
+    transform: scalex(1);
+}
+
+.tabs {
+    clear: both;
+}
+
+.tabs > div {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    display: none;
+}
+
+.tabs > div:first-child {
+    display: block;
+}
