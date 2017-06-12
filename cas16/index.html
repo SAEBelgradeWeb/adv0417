@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+    <style>
+        .card {
+            width: 200px !important;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" class="container">
+    <!--<div class="control">-->
+        <!--<label for="unos" class="label">Unesi tekst</label>-->
+        <!--<input type="text" id="unos" class="input" v-model="unos">-->
+    <!--</div>-->
+
+    <!--<ul>-->
+        <!--<li v-for="car in cars">{{car}}</li>-->
+    <!--</ul>-->
+    <!--<input type="text" id="unos" v-model="unos">-->
+    <!--<button @click="dodajCar()">Dodaj</button>-->
+
+   <card username="" slika=""></card>
+
+    <div class="card" v-for="user in users">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img :src="user.avatar" alt="Image">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">{{user.username}}</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                </div>
+            </div>
+
+            <div class="content">
+              {{user.tekst}}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
+<script src="cas16/main.js"></script>
+</body>
+</html>

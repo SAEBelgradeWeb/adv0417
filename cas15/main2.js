@@ -1,7 +1,6 @@
 function convertor(number) {
   var roman = "";
   var sifrarnik = {
-
     "_1000": "M",
     "_900": "CM",
     "_500": "D",
